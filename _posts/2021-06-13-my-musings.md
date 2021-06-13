@@ -9,13 +9,13 @@ The main goal of many of my Raspberry Pi (RPi) projects was to a) reduce the foo
 
 So at some point I replaces a PC Desktop with a RPi Zero W. The main uses were monitoring my UPS and serve as an ssh server into my home noetwork when working remotely. 
 
-Then I began dabbling in crypto currency but felt that mining would not be economical and feasible on a RPi. I found [NavPi](https://navhub.org/projects/nav-pi/) where you could earn crypto through staking.
+Then I began dabbling in crypto currency but felt that mining would not be economical and feasible on a RPi. I found [NavPi](https://navhub.org/projects/nav-pi/){:target="_blank"} where you could earn crypto through staking.
 
 I ran a NavPi for quite some time until the latest Navcoin Core version was released which prompted me to switch to new RPi hardware.
 
-In parallel for my home automation projects I used a [Wink Hub](https://www.wink.com/products/wink-hub/) but when Wink decided to move to a subscribtion model I kept searching for a free alternative and found [openHAB](https://www.openhab.org/).
+In parallel for my home automation projects I used a [Wink Hub](https://www.wink.com/products/wink-hub/){:target="_blank"} but when Wink decided to move to a subscribtion model I kept searching for a free alternative and found [openHAB](https://www.openhab.org/){:target="_blank"}.
 
-While searching for new platforms for my Navcoin staking and openHAB projects I came across Jeff Geerling's [youtube channel](https://www.youtube.com/channel/UCR-DXc1voovS8nhAvccRZhg).
+While searching for new platforms for my Navcoin staking and openHAB projects I came across Jeff Geerling's [youtube channel](https://www.youtube.com/channel/UCR-DXc1voovS8nhAvccRZhg){:target="_blank"}.
 
 
 
