@@ -30,6 +30,7 @@ nbproject
 *.sublime-workspace
 .idea
 
+
 # Komodo
 *.komodoproject
 .komodotools
@@ -41,6 +42,7 @@ validation-report.json
 # Folders to ignore
 node_modules
 bower_components
+admin
 
 Gemfile
 Gemfile.lock
