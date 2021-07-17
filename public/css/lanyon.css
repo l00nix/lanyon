@@ -532,6 +532,18 @@ a.pagination-item:hover {
   color: #8f5536;
 }
 
+/* Maple Leaf Blue */
+.theme-base-07 .sidebar,
+.theme-base-07 .sidebar-toggle:active,
+.theme-base-07 #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #001B5B;
+}
+.theme-base-07 .container a,
+.theme-base-07 .sidebar-toggle,
+.theme-base-07 .related-posts li a:hover {
+  color: #001B5B;
+}
+
 
 /*
  * Overlay sidebar
