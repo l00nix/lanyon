@@ -3,7 +3,7 @@ title: The LiM CM4 Carrier Board is real
 layout: post
 ---
 
-I finally received the prototypes of the LiM CM4 Carriers Board.
+I finally received the prototypes of the LiM CM4 Carrier Board. The LiM carrier board took about two month from idea (May 22nd, 2021) to delivery (July 14th, 2021). Special thanks to [Anush Verma](https://www.linkedin.com/in/anish-verma-a5a05a8b/){:target="_blank"} for working with me on the CAD designs of the carrier board.
 
 Here are some pictures and a video
 
