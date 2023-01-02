@@ -1,7 +1,7 @@
 ---
 title: "(LiM) Kubernetes Cluster set up using Ansible"
 layout: post
-published: false
+published: true
 ---
 
 Inspired by “Network Chuck”’s video tutorial[ “i built a Raspberry Pi SUPER COMPUTER!! // ft.
