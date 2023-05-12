@@ -1,5 +1,5 @@
 ---
-title: "Automating LiM Kubernetes Cluster set up"
+title: "My Custom (Automated) LiM Kubernetes Cluster"
 layout: page
 published: true
 carousels:
