@@ -8,12 +8,12 @@ After what felt like an eternity (2+ years) I had all the components together to
 
 In the above picture a depiction of all the parts making up a cluster node:
 1.	LiM CM4 Cluster carrier board
-2.	Raspberry Pi Compute Module (CM) 4 Light 8GB RAM with WiFi - CM4108000
+2.	Raspberry Pi Compute Module (CM) 4 Light 8GB RAM with wifi - CM4108000
 3.	128x32 i2c OLED display
 4.	128GB 2232 M.2 M-key socket NVMe PCIe SSD drive
-5.	CM4 Heat sink with thermal compound strip and screws
+5.	CM4 Heatsink with thermal compound strip and screws
 6.	Customer designed 90 degree i2c OLED angle bracket
-7.	Brush less LED cooling fan CPU with screws
+7.	Brushless LED cooling fan CPU with screws
 8.	Not pictured – M2.5 brass standoffs with screw
 
 Assembly line, the parts to put all eight together:
@@ -250,7 +250,7 @@ Then I tested it by pinging the cluster with ansible:
 ![limcluster_build12](/images/limcluster_build/rancher.png)
 
 {:start="8"}
-8. Once Rancher was installed I connected the limcluster to it
+8. Once Rancer was installed I connected the limcluster to it
 
 ![limcluster_build13](/images/limcluster_build/rancher_complete.gif)
 
