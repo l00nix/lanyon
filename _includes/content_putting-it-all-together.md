@@ -269,7 +269,7 @@ Then I tested it by pinging the cluster with Ansible:
 ![limcluster_build16](/images/limcluster_build/rancher_cows.gif)
 
 {:start="11"}
-11. I also did get the Minecraft server install working via Racnher GUI, exactly as descriped by NetworkChuck in his video.
+11. I also did get the Minecraft server install working via Rancher GUI, exactly as descriped by NetworkChuck in his video.
 
 {:start="12"}
 12. The last step for me was to get the OLEDs working to display the stats of each node.
