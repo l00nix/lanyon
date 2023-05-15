@@ -1,6 +1,6 @@
-The idea for a cluster tray or Pi Tray was formed when I started out designing the Less-is-More (LiM) Raspberry Pi Compute Module 4 (CM4) cluster carrier board. 
+The idea for a cluster tray, or Pi Tray, was formed when I started out designing the Less-is-More (LiM) Raspberry Pi Compute Module 4 (CM4) cluster carrier board. 
 
-All the cluster set ups for Raspberry Pis I found on the Internet have the boards lined up either side by side or one above the other. This type of alignment of the Raspberry Pis requires venting and fans to circulate the heat away and out of the cases from the CPU's.  
+All the cluster set ups for Raspberry Pis I found on the Internet have the boards lined up either side by side or one above the other. This type of alignment of the Raspberry Pis requires venting and fans to circulate the heat away from the CPUs and out of the cases.
 
 | Horizontal Cluster | Vertical Cluster| 
 | -------- | -------- |
@@ -17,12 +17,12 @@ The original idea was a 2D drawing and a model made from toilet paper rolls with
 {% include carousel.html height="75" unit="%" duration="7" number="2" %}
 
 ## The Pringles Prototype
-For the next version of the Pi Tray prototype I replace the toilet paper rolls with a Pringles tube:
+For the next version of the Pi Tray prototype, I replaced the toilet paper rolls with a Pringles tube:
 
 {% include carousel.html height="75" unit="%" duration="7" number="3" %}
 
 ## First 3D Printed Prototype
-As a next step I thought, maybe I could design and 3D print a modular tray that could allow for better air circulation. I found a guy on [Fiverr](https://www.fiverr.com/cadguru15){:target="_blank"} who designed the first prototype of the Pi Tray.
+As a next step, I thought maybe I could design and 3D print a modular tray that could allow for better air circulation. I found a guy on [Fiverr](https://www.fiverr.com/cadguru15){:target="_blank"} who designed the first prototype of the Pi Tray.
 
 ![Pi Tray 3D Printed Prototype](/images/Pi_Tray_3D_Prototype.png )
 
@@ -36,14 +36,14 @@ Another improvement for the next iteration of the Pi Tray was that it was only d
 | -------- | -------- | 
 | ![Pi_Tray_v2_drawing](/images/Pi_Tray_v2_drawing.png)      | ![Pi_Tray_v2_3Levels_drawing](/images/Pi_Tray_v2_3Levels_drawing.png)      |
 
-Here are some pictures of the the Pi Tray v2 printed, with a LiM cluster board and Raspberry Pi 4B mounted:
+Here are some pictures of the Pi Tray v2 printed, with a LiM cluster board and a Raspberry Pi 4B mounted:
 
 {% include carousel.html height="75" unit="%" duration="7" number="4" %}
 
-So, after I had two Pi Tray modules printed and started to put a cluster together I noticed  I forgot to add notches in the bottom of the design to allow for the cables to come out of and allow the tray to be positioned evenly on a surface.
+So, after I had two Pi Tray modules printed and started to put a cluster together, I noticed  I forgot to add notches in the bottom of the design to allow for the cables to come out of and allow the tray to be positioned evenly on a surface.
 
 ![Pi Tray no notch](/images/Pi_Tray_no_notch.jpg)
 
-I did take a Dremel to one of the modules and added for notches to allow for the network cables to pass through. The final v3 of the Pi Tray will be updated to include these notches.
+I did take a Dremel to one of the modules and added four notches to allow for the network cables to pass through. The final v3 of the Pi Tray will be updated to include these notches.
 
-I will post pictured of the final v3 of the Pi Tray as well as the complete eight node cluster mounted on the modular trays when complete.
+I will post pictures of the final v3 of the Pi Tray as well as the complete eight node cluster mounted on the modular trays when complete.

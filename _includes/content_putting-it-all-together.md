@@ -6,7 +6,7 @@ After what felt like an eternity (2+ years) I had all the components together to
 
 ![limcluster_build1](/images/limcluster_build/limcluster1.png)
 
-In the above picture a depiction of all the parts making up a cluster node:
+In the above picture, a depiction of all the parts making up a cluster node:
 1.	LiM CM4 Cluster carrier board
 2.	Raspberry Pi Compute Module (CM) 4 Light 8GB RAM with WiFi - CM4108000
 3.	128x32 i2c OLED display
@@ -33,13 +33,13 @@ Cluster top view:
 ![limcluster_build5](/images/limcluster_build/limcluster5.png)
 
 ## Software Build
-Since I wanted to use Rancher to manage the cluster, I also prepared an [Intel based UP 4000 Board ](https://up-board.org/up-4000/)and installed Ubuntu 22.04 and Rancher 2.5 on it (more on the Rancher install further down). I set this up as the ‘clustermaster’ – 10.0.0.200. All the management of the cluster (Rancher, ansible) is done from the clustermaster node.
+Since I wanted to use Rancher to manage the cluster, I also prepared an [Intel based UP 4000 Board ](https://up-board.org/up-4000/)and installed Ubuntu 22.04 and Rancher 2.5 on it (more on the Rancher install further down). I set this up as the ‘clustercontroller’ – 10.0.0.200. All the management of the cluster (Rancher, Ansible) is done from the clustercontroller node.
 
-So, for the most part to install the cluster software I followed NetworkChuck’s video tutorial ["i built a Raspberry Pi SUPER COMPUTER!! // ft. Kubernetes (k3s cluster w/ Rancher"](https://www.youtube.com/watch?v=X9fSMGkjtug). I wanted to automate the cluster build as much as I could so where possible I created ansible scripts. But first I needed to install [Raspberry Pi OS](https://www.raspberrypi.com/software/) on the cluster nodes.
+So, for the most part to install the cluster software I followed NetworkChuck’s video tutorial ["i built a Raspberry Pi SUPER COMPUTER!! // ft. Kubernetes (k3s cluster w/ Rancher)"](https://www.youtube.com/watch?v=X9fSMGkjtug). I wanted to automate the cluster build as much as I could, so where possible I created Ansible scripts. But first, I needed to install [Raspberry Pi OS](https://www.raspberrypi.com/software/) on the cluster nodes.
 
 {:start="1"}
 1. Imaging
-Since the cluster nodes are build with SSD drives, I used Raspberry Pi Imager to write the OS to the eight SSD drives. 
+Since the cluster nodes are built with SSD drives, I used the Raspberry Pi Imager to write the OS to the eight SSD drives. 
 
 ![limcluster_build6](/images/limcluster_build/limcluster6.png)
 
@@ -88,12 +88,12 @@ Initial set up/configuration:
 10.0.0.209
 ```
 
-Then I tested it by pinging the cluster with ansible:
+Then I tested it by pinging the cluster with Ansible:
 
 ![limcluster_build7](/images/limcluster_build/limcluster_ping.gif)
 
 {:start="3"}
-3. Next I update the OS on all cluster nodes with the following ansible script:
+3. Next, I updated the OS on all cluster nodes with the following Ansible script:
 
 ```yaml
 ---
@@ -136,7 +136,7 @@ Then I tested it by pinging the cluster with ansible:
 ![limcluster_build8](/images/limcluster_build/limcluster_upgrade.gif)
 
 {:start="4"}
-4. To add ```“cgroup_memory=1 cgroup_enable=memory”``` I wrote the following ansible script so I can easily do this across multiple cluster nodes and also easily add additional nodes if wanted/needed:
+4. To add ```“cgroup_memory=1 cgroup_enable=memory”``` I wrote the following Ansible script so I can easily do this across multiple cluster nodes and also easily add additional nodes if wanted/needed:
 
 ```yaml
 ---
@@ -176,7 +176,7 @@ Then I tested it by pinging the cluster with ansible:
 ![limcluster_build9](/images/limcluster_build/limcluster_append_cmdline.gif)
 
 {:start="5"}
-5. I DID NOT follow Step 2 – K3s Prep of NetworkChuck’s tutorial and skipped the configuration of legacy IP tables. I continued NetworkChuck’s tutorial with the installation of the masternode of the k3s cluster. I created the following ansible script for the installation of the masternode:
+5. I DID NOT follow 'Step 2 – K3s Prep' of NetworkChuck’s tutorial and skipped the configuration of legacy IP tables. I continued NetworkChuck’s tutorial with the installation of the masternode of the k3s cluster. I created the following Ansible script for the installation of the masternode:
 
 ```yaml
 ---
@@ -204,7 +204,7 @@ Then I tested it by pinging the cluster with ansible:
 ![limcluster_build10](/images/limcluster_build/limcluster_k3s_masternode_install.gif)
 
 {:start="6"}
-6. Next, on to installing the cluster nodes with this ansible script:
+6. Next, on to installing the cluster nodes with this Ansible script:
 
 ```yaml
 - hosts: "{{ "{{" }} variable_master {{ }} }}"
@@ -245,12 +245,12 @@ Then I tested it by pinging the cluster with ansible:
 ![limcluster_build11](/images/limcluster_build/limcluster_k3s_workernodes_install.gif)
 
 {:start="7"}
-7. After I had the cluster installed and running I followed NetworkChuck's instructions to install Rancher 2.5 on my clustermaster
+7. After I had the cluster installed and running, I followed NetworkChuck's instructions to install Rancher 2.5 on my clustermaster
 
 ![limcluster_build12](/images/limcluster_build/rancher.png)
 
 {:start="8"}
-8. Once Rancher was installed I connected the limcluster to it
+8. Once Rancher was installed, I connected the limcluster to it
 
 ![limcluster_build13](/images/limcluster_build/rancher_complete.gif)
 
@@ -259,15 +259,22 @@ Then I tested it by pinging the cluster with ansible:
 ![limcluster_build15](/images/limcluster_build/rancher_screenshot1.png)
 
 {:start="9"}
-9. Now that the limcluster was set up I followed NetworkChucks demos and first installed a couple of instances of nginx
+9. Now that the limcluster was set up, I followed NetworkChuck's demos and first installed a couple of instances of nginx
 
 ![limcluster_build16](/images/limcluster_build/nginx.png)
 
 {:start="10"}
-10. After that I tried the load balancing demo
+10. After that, I tried the load balancing demo
 
 ![limcluster_build16](/images/limcluster_build/rancher_cows.gif)
 
+{:start="11"}
+11. I also did get the Minecraft server install working via Racnher GUI, exactly as descriped by NetworkChuck in his video.
 
+{:start="12"}
+12. The last step for me was to get the OLEDs working to display the stats of each node.
 
+This was more of a fun add on that is not really necessary for the functionality of the cluster but I thought it would be nice to display basic system information on a small OLED display for easier identification of the indidual nodes.
+
+See my seperate page on this side project for now: [oleddisplaystats](https://oleddisplaystats.loonix.ca/) and the more Raspberry Pi/limcluster specific: [displaypistats](https://displaypistats.loonix.ca/)
 
