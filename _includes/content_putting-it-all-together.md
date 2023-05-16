@@ -33,9 +33,9 @@ Cluster top view:
 ![limcluster_build5](/images/limcluster_build/limcluster5.png)
 
 ## Software Build
-Since I wanted to use Rancher to manage the cluster, I also prepared an [Intel based UP 4000 Board ](https://up-board.org/up-4000/)and installed Ubuntu 22.04 and Rancher 2.5 on it (more on the Rancher install further down). I set this up as the ‘clustercontroller’ – 10.0.0.200. All the management of the cluster (Rancher, Ansible) is done from the clustercontroller node.
+Since I wanted to use Rancher to manage the cluster, I also prepared an [Intel based UP 4000 Board](https://up-board.org/up-4000/){:target="_blank"} and installed Ubuntu 22.04 and Rancher 2.5 on it (more on the Rancher install further down). I set this up as the ‘clustercontroller’ – 10.0.0.200. All the management of the cluster (Rancher, Ansible) is done from the clustercontroller node.
 
-So, for the most part to install the cluster software I followed NetworkChuck’s video tutorial ["i built a Raspberry Pi SUPER COMPUTER!! // ft. Kubernetes (k3s cluster w/ Rancher)"](https://www.youtube.com/watch?v=X9fSMGkjtug). I wanted to automate the cluster build as much as I could, so where possible I created Ansible scripts. But first, I needed to install [Raspberry Pi OS](https://www.raspberrypi.com/software/) on the cluster nodes.
+So, for the most part to install the cluster software I followed NetworkChuck’s video tutorial ["i built a Raspberry Pi SUPER COMPUTER!! // ft. Kubernetes (k3s cluster w/ Rancher)"](https://www.youtube.com/watch?v=X9fSMGkjtug). I wanted to automate the cluster build as much as I could, so where possible I created Ansible scripts. But first, I needed to install [Raspberry Pi OS](https://www.raspberrypi.com/software/){:target="_blank"} on the cluster nodes.
 
 {:start="1"}
 1. Imaging
@@ -266,15 +266,36 @@ Then I tested it by pinging the cluster with Ansible:
 {:start="10"}
 10. After that, I tried the load balancing demo
 
-![limcluster_build16](/images/limcluster_build/rancher_cows.gif)
+![limcluster_build17](/images/limcluster_build/rancher_cows.gif)
 
 {:start="11"}
 11. I also did get the Minecraft server install working via Rancher GUI, exactly as descriped by NetworkChuck in his video.
+
+![limcluster_build18](/images/limcluster_build/limcluster-minecraft.png)
+Minecraft deployment in the Rancher GUI.
+
+![limcluster_build19](/images/limcluster_build/limcluster-minecraft.gif)
+Minecraft Java edition connecting to the minecraft server running on the limcluster.
+
+**Note:** I did run into an issue that caused the minecraft deployment to 'crashloop' and constantly reboot. The issue is described [here:](https://stackoverflow.com/questions/58331710/launching-helm-chart-stable-minecraft-on-kubernetes-1-14-on-eks-fails-liveness-p){:target="_blank"}
+
+I fixed it by changing the following values in the helm chart for the minecraft deployment:
+```yaml
+...
+livenessProbe:
+...
+   initialDelaySeconds: 90
+...
+readinessProbe:
+...
+   initialDelaySeconds: 30
+...
+```
 
 {:start="12"}
 12. The last step for me was to get the OLEDs working to display the stats of each node.
 
 This was more of a fun add on that is not really necessary for the functionality of the cluster but I thought it would be nice to display basic system information on a small OLED display for easier identification of the indidual nodes.
 
-See my seperate page on this side project for now: [oleddisplaystats](https://oleddisplaystats.loonix.ca/) and the more Raspberry Pi/limcluster specific: [displaypistats](https://displaypistats.loonix.ca/)
+See my seperate page on this side project for now: [oleddisplaystats](https://oleddisplaystats.loonix.ca/){:target="_blank"} and the more Raspberry Pi/limcluster specific: [displaypistats](https://displaypistats.loonix.ca/){:target="_blank"}
 

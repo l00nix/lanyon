@@ -10,7 +10,7 @@ raspberry-pi-super-computer-ft-kubernetes-k3s-cluster-w-rancher/discussions/inde
 2. The third, learning and creating kubernetes clusters on Raspberry Pis with [kubernetes](https://kubernetes.io/){:target="_blank"}/[k3s](https://k3s.io/){:target="_blank"} - a light weight version of kubernetes and managing them with [Rancher](https://www.rancher.com/){:target="_blank"}. 
 3. The fourth, learning a new to me way of automating/simplifying administrative tasks, cluster installs, and management using [Ansible](https://www.ansible.com/){:target="_blank"}.
 
-I should add that I am well down the path of my career, but I have always enjoyed tech and Linux. However, I am doing all of this as a hobby. I am sure there is many different (and possibly better) ways of doing things, but this was my way.
+I should add that I am well down the path of my career, but I have always enjoyed tech and Linux. However, I am doing all of this as a hobby. I am sure there are many different (and possibly better) ways of doing things, but this was my way.
 
 # 1 - Developing the LiM Cluster CM4 Carrier Board
 Watching  Jeff Geerling's video [New Raspberry Pi Projects - CM4 NAS, Piunora, and Seaberry!](https://www.youtube.com/watch?v=7Li7Nh9V74I&t=300s){:target="_blank"} where he talks about [mebs_t's self designed NAS](https://github.com/mebs/CM4-NAS){:target="_blank"}, made me think I am interested in doing something like this too. At the time, the use case I was working on was [staking Navcoin headlessly with a Raspberry Pi Compute Module 4.](/2021/06/13/navcoin-staking/){:target="_blank"}
