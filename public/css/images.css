@@ -1,11 +1,11 @@
 .image-wrapper {
     text-align: center;
-
-    .image-caption {
-        font: Arial; 
-	color: $grey-color;
-        margin-top: -20px;
-	font-size: 14px;
-	font-weight: bold;
-    }
 }
+
+.image-wrapper .image-caption {
+    font-family: Arial;
+    margin-top: -20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
