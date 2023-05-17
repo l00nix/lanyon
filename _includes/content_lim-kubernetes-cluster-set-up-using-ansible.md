@@ -36,7 +36,7 @@ Three versions of the LiM Carrier Board series have been prototyped, and more in
 - [LiM+ Carrier Board](https://lim.loonix.ca/pages/LiM+_Board.html){:target="_blank"}
 - [LiM CM4 Cluster Carrier Board Carrier Board](https://lim.loonix.ca/pages/pages/LiM_Cluster_CB.html){:target="_blank"}
 
-The original LiM carrier board took about two months from idea (May 22nd, 2021) to delivery (July 14th, 2021). Special thanks to [Anish Verma](https://www.linkedin.com/in/anish-verma-a5a05a8b/){:target="_blank"} for working with me on the CAD designs of the carrier board.
+The original LiM carrier board took about two months from idea (May 22nd, 2021) to delivery (July 14th, 2021). Special thanks to [Anish Verma](https://www.linkedin.com/in/anish-verma-a5a05a8b/){:target="_blank"} and [Muhammad S.](https://www.upwork.com/freelancers/~0152bdd89a2bb116f1){:target="_blank"} for working with me on the CAD designs of the carrier board.
 
 I forked this board design from [Shawn Hymel](https://github.com/ShawnHymel/rpi-cm4-base-carrier){:target="_blank"}. He has a two part YouTube series where he goes through how to design a CM4 Carrier Board.
 
