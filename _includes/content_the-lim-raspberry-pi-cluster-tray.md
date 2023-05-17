@@ -33,7 +33,7 @@ As a next step, I thought maybe I could design and 3D print a modular tray that 
 
 The problem with the original prototype was that it was too big to be printed on a standard 3D printer surface. It had to be printed in two pieces and then glued together. 
 
-Another improvement for the next iteration of the Pi Tray was that it was only designed with mounting holes for the LiM cluster board. So another guy on [Upwork](https://www.upwork.com/freelancers/sergeylosk){:target="_blank"}  helped me design the next iteration of the Pi Tray. This time I had it designed it to fit on a standard 3D printer surface (220mmx220mmx250mm) as well as it should have mounting options for not only the LiM cluster board but also a Raspberry Pi 4B.
+Another improvement for the next iteration of the Pi Tray was that it was only designed with mounting holes for the LiM cluster board. So another guy, Sergiy L., on [Upwork](https://www.upwork.com/freelancers/sergeylosk){:target="_blank"} helped me design the next iteration of the Pi Tray. This time I had it designed it to fit on a standard 3D printer surface (220mmx220mmx250mm) as well as it should have mounting options for not only the LiM cluster board but also a Raspberry Pi 4B.
 
 | Pi Tray v2 drawing| Pi Tray v2 3 levels drawing | 
 | -------- | -------- | 
