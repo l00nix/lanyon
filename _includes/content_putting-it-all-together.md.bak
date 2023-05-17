@@ -24,7 +24,7 @@ Assembly line, the parts to put all eight cluster nodes together:
 {% include image.html
             img="/images/limcluster_build/limcluster2.png"
             title="limcluster_build2"
-            caption="Fig 7: Parts pre cluster node assembly" %}
+            caption="Fig 7: Parts pre cluster node assemply" %}
 
 And this is now how eight of the cluster nodes look like put together:
 
@@ -74,7 +74,7 @@ Initial set up/configuration:
 	* Cluster node8: 10.0.0.208 – clusternode8
 
 {:start="2"}
-2. Once I booted up all eight cluster nodes I copied ssh-keys across so I can communicate and administer the nodes from the clustercontroller. I created the following Ansible hosts file in /etc/ansible/:
+2. Once I booted up all eight cluster nodes I copied ssh-keys across so I can communicate and administer the nodes from the clustercontroller. I created the following ansible hosts file in /etc/ansible/:
 
 ```bash
 [clustercontroller]
@@ -201,10 +201,10 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/limcluster_append_cmdline.gif"
             title="limcluster_build9"
-            caption="Fig 14: Adding additional parameters to the Raspian OS configuration with Ansible" %}
+            caption="Fig 14: Adding additional paramters to the Raspian OS configration with Ansible" %}
 
 {:start="5"}
-5. I DID NOT follow 'Step 2 – K3s Prep' of NetworkChuck’s tutorial and skipped the configuration of legacy IP tables. I continued NetworkChuck’s tutorial with the installation of the masternode of the k3s cluster. The k3s master node install is a 'one liner', an Ansible script is maybe a bit overkill but because I can, created the following Ansible script for the installation of the masternode:
+5. I DID NOT follow 'Step 2 – K3s Prep' of NetworkChuck’s tutorial and skipped the configuration of legacy IP tables. I continued NetworkChuck’s tutorial with the installation of the masternode of the k3s cluster. The k3s master node install is a 'one liner', an Ansible script is maybe a bit overkillI but because I can, created the following Ansible script for the installation of the masternode:
 
 ```yaml
 ---
@@ -298,11 +298,11 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/rancher_screenshot.png"
             title="limcluster_build14"
-            caption="Fig 19: Cluster stats being displayed in Rancher" %}
+            caption="Fig 19: Cluster stats being dispalyed in Rancher" %}
 
 {% include image.html
             img="/images/limcluster_build/rancher_screenshot1.png"
             title="limcluster_build15"
             caption="Fig 20: More cluster stats displayed in Rancher" %}
 
-I now had a functioning 8 node k3s cluster set up, managed by Rancher.
+I now had a funtioning 8 node k3s cluster set up, managed by Rancher.
