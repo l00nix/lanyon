@@ -6,28 +6,48 @@ All the cluster set ups for Raspberry Pis I found on the Internet have the board
 | -------- | -------- |
 | ![Horizontal Cluster](/images/tradional_cluster_horizontal900.jpeg)   | ![Vertical Cluster](/images/tradional_cluster_vertical.jpeg)   |
 
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+
+Fig 1: Examples of Raspberry Pi Cluster Enclosures 
+
+</p>
+
 This is what made me think of aligning the Raspberry Pis in an offset pattern to allow for better airflow. I was thinking of using a Pringles box and aligning trays in a star shaped way.
 ## The original idea and first model
 The original idea was a 2D drawing and a model made from toilet paper rolls with Bristol board wings for the trays for the Raspberry Pis:
 
 |  ![Cluster Tower 2D Side View](/images/cluser_tower_2D_side_view.png)     |  ![Cluster Tower 2D Top View](/images/cluser_tower_2D_top_view.png)     | 
 
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+
+Fig 2: First Brainstorm Images of the Pi Cluster Tray
+
+</p>
+
 **First Model:**
 
 {% include carousel.html height="75" unit="%" duration="7" number="2" %}
+
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+
+Collage 1: Various Pictures of the First Pi Tray Model
+
+</p>
 
 ## The Pringles Prototype
 For the next version of the Pi Tray prototype, I replaced the toilet paper rolls with a Pringles tube:
 
 {% include carousel.html height="75" unit="%" duration="7" number="3" %}
-
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+Collage 2: Various Pictures of the Pringles Pi Tray Prototype
+</p>
 ## First 3D Printed Prototype
 As a next step, I thought maybe I could design and 3D print a modular tray that could allow for better air circulation. I found a guy on [Fiverr](https://www.fiverr.com/cadguru15){:target="_blank"} who designed the first prototype of the Pi Tray.
 
 {% include image.html
             img="images/Pi_Tray_3D_Prototype.png"
             title="Pi Tray 3D Printed Prototype"
-            caption="Fig 1: Pi Tray 3D Printed Prototype" %}
+            caption="Fig 3: Pi Tray 3D Printed Prototype" %}
 
 ## Second 3D Printed Prototype
 
@@ -39,16 +59,24 @@ Another improvement for the next iteration of the Pi Tray was that it was only d
 | -------- | -------- | 
 | ![Pi_Tray_v2_drawing](/images/Pi_Tray_v2_drawing.png)      | ![Pi_Tray_v2_3Levels_drawing](/images/Pi_Tray_v2_3Levels_drawing.png)      |
 
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+Fig 4: 3D Drawings of the Modular Pi Tray
+</p>
+
 Here are some pictures of the Pi Tray v2 printed, with a LiM cluster board and a Raspberry Pi 4B mounted:
 
 {% include carousel.html height="75" unit="%" duration="7" number="4" %}
+
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+Collage 3: Various Pictures of the 3D Printed Modular Pi Tray
+</p>
 
 So, after I had two Pi Tray modules printed and started to put a cluster together, I noticed  I forgot to add notches in the bottom of the design to allow for the cables to come out of and allow the tray to be positioned evenly on a surface.
 
 {% include image.html
             img="images/Pi_Tray_no_notch.jpg"
             title="Pi_Tray_no_notch"
-            caption="Fig 2: Pi Tray no notch" %}
+            caption="Fig 5: Pi Tray no notch" %}
 
 I did take a Dremel to one of the modules and added four notches to allow for the network cables to pass through. The final v3 of the Pi Tray will be updated to include these notches.
 

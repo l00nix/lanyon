@@ -28,7 +28,12 @@ The original idea of the LiM Carrier Board series was to build a series of minim
 Except for the LiM CM4 Cluster Carrier Board, the LiM and LiM+ Carrier boards are meant for CM4 boards with onboard storage (the LiM CM4 Cluster Carrier Board supports both CM4 versions with and w/o eMMC (lite version), micro SD card, and 2232 and has a 2241 M.2 M-key socket for NVMe PCIe SSD) and WiFi as the LiM and LiM+ carrier boards provide no other functionality other than power and status LEDs and flashing capability (LiM+). The LiM CM4 Cluster Carrier Board has PoE Ethernet and supports WiFi and non-WiFi CM4 models.
 
 {% include carousel.html height="75" unit="%" duration="7" number="1" %}
-_**Various LiM Carrier Board models**_
+
+<p style="font:Arial;text-align:center;margin-top: -20px; color: $grey-color; font-weight: bold; font-size: 14px">
+
+Collage 0: Various LiM Carrier Board models
+
+</p>
 
 Three versions of the LiM Carrier Board series have been prototyped, and more information can be found on their respective pages.
 

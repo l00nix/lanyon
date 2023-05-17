@@ -7,7 +7,7 @@ After what felt like an eternity (2+ years) I had all the components together to
 {% include image.html
             img="/images/limcluster_build/limcluster1.png"
             title="limcluster_build1"
-            caption="Fig 3: Depiction of all the parts making up a cluster node" %}
+            caption="Fig 6: Depiction of all the parts making up a cluster node" %}
 
 Parts List:
 1.	LiM CM4 Cluster carrier board
@@ -24,26 +24,26 @@ Assembly line, the parts to put all eight cluster nodes together:
 {% include image.html
             img="/images/limcluster_build/limcluster2.png"
             title="limcluster_build2"
-            caption="Fig 4: Parts pre cluster node assemply" %}
+            caption="Fig 7: Parts pre cluster node assemply" %}
 
 And this is now how eight of the cluster nodes look like put together:
 
 {% include image.html
             img="/images/limcluster_build/limcluster3.png"
             title="limcluster_build3"
-            caption="Fig 5: Eight cluster nodes fully assembled" %}
+            caption="Fig 8: Eight cluster nodes fully assembled" %}
 
 Assembled cluster with eight cluster nodes in the Pi (Pringles) Tray standing on top of a 8 port PoE router:
 
 {% include image.html
             img="/images/limcluster_build/limcluster4.png"
             title="limcluster_build4"
-            caption="Fig 6: Complete cluster set up" %}
+            caption="Fig 9: Complete cluster set up" %}
 
 {% include image.html
             img="/images/limcluster_build/limcluster5.png"
             title="limcluster_build5"
-            caption="Fig 7: Cluster Top View" %}
+            caption="Fig 10: Cluster Top View" %}
 
 ## Software Build
 Since I wanted to use Rancher to manage the cluster, I also prepared an [Intel based UP 4000 Board](https://up-board.org/up-4000/){:target="_blank"} and installed Ubuntu 22.04 and Rancher 2.5 on it (more on the Rancher install further down). I set this up as the ‘clustercontroller’ – 10.0.0.200. All the management of the cluster (Rancher, Ansible) is done from the clustercontroller node.
@@ -58,7 +58,7 @@ Since the cluster nodes are built with SSD drives, I used the Raspberry Pi Image
 {% include image.html
             img="/images/limcluster_build/limcluster6.png"
             title="limcluster_build6"
-            caption="Fig 8: Raspberry Pi Imager"
+            caption="Fig 11: Raspberry Pi Imager"
 	    url="https://www.raspberrypi.com/software/" %}
 
 Initial set up/configuration: 
@@ -111,7 +111,7 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/limcluster_ping.gif"
             title="limcluster_build7"
-            caption="Fig 9: Pinging all cluster nodes with Ansible" %}
+            caption="Fig 12: Pinging all cluster nodes with Ansible" %}
 
 {:start="3"}
 3. Next, I updated the OS on all cluster nodes with the following Ansible script:
@@ -157,7 +157,7 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/limcluster_upgrade.gif"
             title="limcluster_build8"
-            caption="Fig 10: Updating and rebooting Raspian OS on all cluster nodes with Ansible" %}
+            caption="Fig 13: Updating and rebooting Raspian OS on all cluster nodes with Ansible" %}
 
 {:start="4"}
 4. To add ```“cgroup_memory=1 cgroup_enable=memory”``` I wrote the following Ansible script so I can easily do this across multiple cluster nodes and also easily add additional nodes if wanted/needed:
@@ -201,7 +201,7 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/limcluster_append_cmdline.gif"
             title="limcluster_build9"
-            caption="Fig 11: Adding additional paramters to the Raspian OS configration with Ansible" %}
+            caption="Fig 14: Adding additional paramters to the Raspian OS configration with Ansible" %}
 
 {:start="5"}
 5. I DID NOT follow 'Step 2 – K3s Prep' of NetworkChuck’s tutorial and skipped the configuration of legacy IP tables. I continued NetworkChuck’s tutorial with the installation of the masternode of the k3s cluster. The k3s master node install is a 'one liner', an Ansible script is maybe a bit overkillI but because I can, created the following Ansible script for the installation of the masternode:
@@ -232,7 +232,7 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/limcluster_k3s_masternode_install.gif"
             title="limcluster_build10"
-            caption="Fig 12: Installing k3s on the master node with Ansible" %}
+            caption="Fig 15: Installing k3s on the master node with Ansible" %}
 
 {:start="6"}
 6. Next, on to installing the cluster nodes with this Ansible script:
@@ -277,7 +277,7 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/limcluster_k3s_workernodes_install.gif"
             title="limcluster_build11"
-            caption="Fig 13: Installing k3s on the worker nodes with Ansible" %}
+            caption="Fig 16: Installing k3s on the worker nodes with Ansible" %}
 
 {:start="7"}
 7. After I had the cluster installed and running, I followed NetworkChuck's instructions to install Rancher 2.5 on my clustercontoller
@@ -285,7 +285,7 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/rancher.png"
             title="limcluster_build12"
-            caption="Fig 14: Rancher log in screen after install on the clustercontroller" %}
+            caption="Fig 17: Rancher log in screen after install on the clustercontroller" %}
 
 {:start="8"}
 8. Once Rancher was installed, I connected the limcluster to it
@@ -293,16 +293,16 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/rancher_complete.gif"
             title="limcluster_build13"
-            caption="Fig 15: Importing the k3s cluster into Rancher" %}
+            caption="Fig 18: Importing the k3s cluster into Rancher" %}
 
 {% include image.html
             img="/images/limcluster_build/rancher_screenshot.png"
             title="limcluster_build14"
-            caption="Fig 16: Cluster stats being dispalyed in Rancher" %}
+            caption="Fig 19: Cluster stats being dispalyed in Rancher" %}
 
 {% include image.html
             img="/images/limcluster_build/rancher_screenshot1.png"
             title="limcluster_build15"
-            caption="Fig 17: More cluster stats displayed in Rancher" %}
+            caption="Fig 20: More cluster stats displayed in Rancher" %}
 
 I now had a funtioning 8 node k3s cluster set up, managed by Rancher.
