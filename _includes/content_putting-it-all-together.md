@@ -12,11 +12,11 @@ After what felt like an eternity (2+ years) I had all the components together to
 Parts List:
 1.	LiM CM4 Cluster carrier board
 2.	Raspberry Pi Compute Module (CM) 4 Light 8GB RAM with WiFi - CM4108000
-3.	128x32 i2c OLED display
-4.	128GB 2232 M.2 M-key socket NVMe PCIe SSD drive
-5.	CM4 Heat sink with thermal compound strip and screws
+3.	[128x32 i2c OLED display](https://amzn.to/42TUp2B){:target="_blank"}
+4.	[128GB 2232 M.2 M-key socket NVMe PCIe SSD drive](https://amzn.to/3IpXgrK){:target="_blank"}
+5.	[CM4 Heat sink with thermal compound strip and screws](https://amzn.to/3BKyjDI){:target="_blank"}
 6.	Custom designed 90 degree i2c OLED angle bracket
-7.	Brush less LED cooling fan CPU with screws
+7.	[Brush less LED cooling fan CPU with screws](https://amzn.to/42VcxZJ){:target="_blank"}
 8.	Not pictured – M2.5 brass standoffs with screw
 
 Assembly line, the parts to put all eight cluster nodes together:
@@ -298,11 +298,11 @@ Then I tested it by pinging the cluster with Ansible:
 {% include image.html
             img="/images/limcluster_build/rancher_screenshot.png"
             title="limcluster_build14"
-            caption="Fig 19: Cluster stats being displayed in Rancher" %}
+            caption="Fig 19: Cluster statistics displayed in Rancher Dashboard" %}
 
 {% include image.html
             img="/images/limcluster_build/rancher_screenshot1.png"
             title="limcluster_build15"
-            caption="Fig 20: More cluster stats displayed in Rancher" %}
+            caption="Fig 20: Cluster statistics displayed in Rancher 'Cluster Explorer'" %}
 
 I now had a functioning 8 node k3s cluster set up, managed by Rancher.
