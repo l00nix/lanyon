@@ -24,7 +24,10 @@ For the next version of the Pi Tray prototype, I replaced the toilet paper rolls
 ## First 3D Printed Prototype
 As a next step, I thought maybe I could design and 3D print a modular tray that could allow for better air circulation. I found a guy on [Fiverr](https://www.fiverr.com/cadguru15){:target="_blank"} who designed the first prototype of the Pi Tray.
 
-![Pi Tray 3D Printed Prototype](/images/Pi_Tray_3D_Prototype.png )
+{% include image.html
+            img="images/Pi_Tray_3D_Prototype.png"
+            title="Pi Tray 3D Printed Prototype"
+            caption="Fig 1: Pi Tray 3D Printed Prototype" %}
 
 ## Second 3D Printed Prototype
 
@@ -42,7 +45,10 @@ Here are some pictures of the Pi Tray v2 printed, with a LiM cluster board and a
 
 So, after I had two Pi Tray modules printed and started to put a cluster together, I noticed  I forgot to add notches in the bottom of the design to allow for the cables to come out of and allow the tray to be positioned evenly on a surface.
 
-![Pi Tray no notch](/images/Pi_Tray_no_notch.jpg)
+{% include image.html
+            img="images/Pi_Tray_no_notch.jpg"
+            title="Pi_Tray_no_notch"
+            caption="Fig 2: Pi Tray no notch" %}
 
 I did take a Dremel to one of the modules and added four notches to allow for the network cables to pass through. The final v3 of the Pi Tray will be updated to include these notches.
 

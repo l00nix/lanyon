@@ -37,3 +37,4 @@ My journey on how I built a custom Raspberry Pi Compute Module 4 based k3s clust
 # 2 - Designing The (LiM) Raspberry Pi cluster (Pringles) tray
 {% include content_the-lim-raspberry-pi-cluster-tray.md %}
 {% include content_putting-it-all-together.md %}
+{% include content_testing-and-addons.md %}
