@@ -17,7 +17,7 @@ Parts List:
 5.	[CM4 Heat sink with thermal compound strip and screws](https://amzn.to/3BKyjDI){:target="_blank"}
 6.	Custom designed 90 degree i2c OLED angle bracket
 7.	[Brush less LED cooling fan CPU with screws](https://amzn.to/42VcxZJ){:target="_blank"}
-8.	Not pictured – M2.5 brass standoffs with screw
+8.	Not pictured – [M2.5 brass standoffs with screws](https://amzn.to/43eXom0){:target="_blank"}
 
 Assembly line, the parts to put all eight cluster nodes together:
 
