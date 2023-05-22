@@ -1,9 +1,20 @@
 ---
 title: GPIO 90 Degree i2c OLED Angle Bracket
 layout: post
+carousels:
+  - images:
+    - image: /images/bracket/bracket2.jpg
+    - image: /images/bracket/bracket3.jpg
+    - image: /images/bracket/bracket4.png
+
 ---
 
 A Raspberry Pi GPIO compatible multiplatform 90° OLED bracket for i2c OLED Displays.
+
+{% include image.html
+            img="/images/bracket/bracket1.png"
+            title="limcluster_build1"
+            caption="Fig 1: 3D Render of the Raspberry Pi GPIO compatible multiplatform 90° OLED anlge bracket" %}
 
 The angle bracket allows to easily mount a i2c OLED display onto a Raspberry Pi compatible GPIO. It has been tested with the following boards:
 
@@ -29,3 +40,11 @@ of a compatible [128x32 OLED display](https://amzn.to/41TV1D) with the following
 - SCL
 - VCC
 - GND
+
+{% include carousel.html height="75" unit="%" duration="7" number="1" %}
+
+<p style="font:Arial;text-align:center;margin-top: -20px; font-weight: bold; font-size: 14px">
+
+Collage 0: Various Pictures of the Raspberry Pi GPIO compatible multiplatform 90° angle I2C OLED bracket
+
+</p>
