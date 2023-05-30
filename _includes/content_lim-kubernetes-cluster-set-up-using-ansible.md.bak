@@ -63,19 +63,13 @@ While working on the LiM+ Board, I got interested in clustering and decided to s
 
 This summarizes how I had the idea, designed and built a custom carrier board for the my LiM cluster board.
 
-### The manufacturing process
-<p style="font:Arial;text-align:center; color: red; font-weight: bold; font-size: 14px">
+###The manufacturing process (Sponsoered Content)
 
-Start Sponsored Content
-
-</p>
-
-Now that I had the designs drawn up for the LiM cluster board, I needed them manufactured. I chose [PCBWay](https://www.googleadservices.com/pagead/aclk?sa=L&ai=CG1ORm212ZPfOKrX948APobg4hPq59GrcnczZjw2xqdvDqjAQASDigucDYP2wlIHoA6ABlcGQ0wPIAQmpAgrXcpEj9YI-qAMByAPLBKoE2wFP0E5ZYbOEVHVSHlFvHghomI0QhY0mClDk6fxSNUMDCaFTterBgSkRUrqJyQc5Y3DhH4i0SQkBaSgn28dkFzsthVpjhpI067n8zmCzPIFYuCSS_7VsxKPpA4pa8irKRcq8968gKx7MWUtrmfWjGyseDevGG37sEG6KzBtS-iTzbZQJhJjCbu7y9QxjqdmccGZQt09G_ZwkOEPkgzizZpdEw946khxUgIU4XnP8zH_LHZAUjfYhUsSQT6nls3UIIvjH3GaeZpdKp9Vbwfjh9jUBvKSlcwO9FQW2nXjABLPn0dogoAYugAfTvu8sqAeOzhuoB5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgHg62xAqgH_56xAqgH35-xAtgHANIIGQiAYRABGB4yAooCOgeZ0ICAgIAESL39wTqxCdTiCMcjE8bogAoBmAsByAsBgAwBuAwB2BMCiBQF0BUBmBYB-BYBgBcB&ae=1&num=1&cid=CAQSOwBygQiDClAQHCteU5wwnHPRC9RgpdHwDARsDE3Da0QiBZ8LinLV9_oOLFYXnwCAG0U8-oQbfDebs329GAE&sig=AOD64_0t0Ad6fuG55d_1XRKTqS0I0D1rrA&client=ca-pub-9992192301854026&rf=1&nb=9&adurl=https://www.pcbway.com/orderonline.aspx%3Fadzy%3D19%26campaignid%3D172250251%26adgroupid%3D8780018611){:target="_blank"}.
+Now that I had the designs drawn up for the LiM cluster board, I needed them manufactured. I chose [PCBWay](https://www.pcbway.com/){:target="_blank"}.
 
 {% include image.html
             img="/images/pcbway.png"
             title="PCBWay Ad"
-	    url="https://www.googleadservices.com/pagead/aclk?sa=L&ai=CG1ORm212ZPfOKrX948APobg4hPq59GrcnczZjw2xqdvDqjAQASDigucDYP2wlIHoA6ABlcGQ0wPIAQmpAgrXcpEj9YI-qAMByAPLBKoE2wFP0E5ZYbOEVHVSHlFvHghomI0QhY0mClDk6fxSNUMDCaFTterBgSkRUrqJyQc5Y3DhH4i0SQkBaSgn28dkFzsthVpjhpI067n8zmCzPIFYuCSS_7VsxKPpA4pa8irKRcq8968gKx7MWUtrmfWjGyseDevGG37sEG6KzBtS-iTzbZQJhJjCbu7y9QxjqdmccGZQt09G_ZwkOEPkgzizZpdEw946khxUgIU4XnP8zH_LHZAUjfYhUsSQT6nls3UIIvjH3GaeZpdKp9Vbwfjh9jUBvKSlcwO9FQW2nXjABLPn0dogoAYugAfTvu8sqAeOzhuoB5PYG6gH7paxAqgH_p6xAqgHpKOxAqgH1ckbqAemvhuoB5oGqAfz0RuoB5bYG6gHqpuxAqgHg62xAqgH_56xAqgH35-xAtgHANIIGQiAYRABGB4yAooCOgeZ0ICAgIAESL39wTqxCdTiCMcjE8bogAoBmAsByAsBgAwBuAwB2BMCiBQF0BUBmBYB-BYBgBcB&ae=1&num=1&cid=CAQSOwBygQiDClAQHCteU5wwnHPRC9RgpdHwDARsDE3Da0QiBZ8LinLV9_oOLFYXnwCAG0U8-oQbfDebs329GAE&sig=AOD64_0t0Ad6fuG55d_1XRKTqS0I0D1rrA&client=ca-pub-9992192301854026&rf=1&nb=9&adurl=https://www.pcbway.com/orderonline.aspx%3Fadzy%3D19%26campaignid%3D172250251%26adgroupid%3D8780018611"
             caption="Sponsored PCBWay Ad" %}
 
 PCBWay is a China-based manufacturer specializing in PCB (Printed Circuit Board) production and assembly. They serve both hobbyists and professionals, offering a variety of services such as PCB prototyping, small-batch production, PCB assembly, and other related services.
@@ -84,10 +78,6 @@ The company is well-regarded for their competitive pricing, range of options (su
 
 The company supports a variety of file formats for board design, and they also offer design and layout services. Additionally, PCBWay runs a community platform where PCB designers can share their projects and participate in contests.
 
-There are certainly other services out there but from my personal experience, I can only recommend their PCB manufacturing services. Pricing is reasonable and their customer services is great. I got clarifying emails from their technicians to ensure the PCBs are being manufactured correctly. Even though with the different timezones, they are responsive leading to minimal delays in the manufacturing process. Shipping is also fast, however I had to pay duty and import fees (which you have to with all other manufactures as well, so this is not a PCBWay issue).
+There are certainly other serivces out there but from my personal experience I can only recommend their PCB manufactiring services. Pricing is reasonable and their customer services is great. I got clarifying emails from their technicions to ensure the PCBs are being manufactured correctly. Even though with the differnt timezones they are responsive leading to minimal delays in the manufacturing process. Shipping is also fast, however I had to pay duty and import fees (which you have to with all other manufactures as well, so this is not a PCBWay issue).
 
-<p style="font:Arial;text-align:center; color: red; font-weight: bold; font-size: 14px">
-
-End Sponsored Content
-
-</p>
+ 
